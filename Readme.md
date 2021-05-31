@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Марина Бадрызлова](https://up.htmlacademy.ru/javascript/23/user/942251).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Белик](https://up.htmlacademy.ru/javascript/23/user/84572).
 
 ---
 
