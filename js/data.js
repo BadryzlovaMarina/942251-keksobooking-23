@@ -17,6 +17,13 @@ const typeHousing  = {
   hotel: 'Отель',
 };
 
+const roomCapacity = {
+  1: [1],
+  2: [1, 2],
+  3: [1, 2, 3],
+  100: [0],
+};
+
 const titles = ['Hyatt Regency', 'Marins Park Hotel', 'Park Inn by Radisson', 'Sea Galaxy Hotel Congress & Spa', 'Guest House on Lermontova 8', 'VIP House', 'Villa on Malinka 98', 'Leo House', 'Aura Glamping', 'Breeze & bike'];
 const types = ['palace', 'flat', 'house', 'bungalow', 'hotel'];
 const rooms = [1, 2, 3, 100];
@@ -54,4 +61,4 @@ const createAd = (index) => ({
 
 const createAds = () => new Array(SIMILAR_AD_COUNT).fill(null).map((_, index) => createAd(index));
 
-export {createAds, typeHousing};
+export {createAds, typeHousing, roomCapacity};
