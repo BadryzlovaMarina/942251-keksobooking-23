@@ -1,5 +1,3 @@
-import {roomCapacity} from './data.js';
-
 const adForm = document.querySelector('.ad-form');
 const adTitleInput = adForm.querySelector('#title');
 const adPriceInput = adForm.querySelector('#price');
@@ -19,9 +17,9 @@ if (adTitleInput) {
     const { tooShort, tooLong, valueMissing } = adTitleInput.validity;
 
     if (tooShort) {
-      adTitleInput.setCustomValidity(`Ещё ${  minLength - valueLength } симв.`);
+      adTitleInput.setCustomValidity(`Ещё ${minLength - valueLength} симв.`);
     } else if (tooLong) {
-      adTitleInput.setCustomValidity(`Удалите лишние ${  valueLength - maxLength } симв.`);
+      adTitleInput.setCustomValidity(`Удалите лишние ${valueLength - maxLength} симв.`);
     } else if (valueMissing) {
       adTitleInput.setCustomValidity('Обязательное поле');
     } else {
